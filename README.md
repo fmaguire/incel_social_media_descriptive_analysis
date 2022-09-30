@@ -1,15 +1,31 @@
-# Incels Paper 2: Descriptive analysis of incels.co
+# Language use and trends on incels.is
 
-Incels.co was scraped on `2021_04_15` using a custom beautifulsoup4 script `scripts/scrape_incels.py` (see [log](2021_04_15_inceldom_discussion_scrape/2021_04_15_inceldom_discussion_scrape.log) and [index](2021_04_15_inceldom_discussion_scrape/complete_submissions_index.txt) for scrape details).
+This repository contains the data and analyses performed for our manuscript the `Men who Hate Women: The Misogyny of Involuntarily Celibate Men` (which builds on data and qualitative work from our prior work: [10.1177/1097184X211017954](https://doi.org/10.1177/1097184X211017954)).  
+This paper builds a qualitatively-developed glossary and performs descriptive quantiative analyses of language-use and trends on [https://incels.is/](https://incels.is/) (previously called incels.co among other iterations).
 
-## Quantitative Analysis of Key Terms Identified Qualitatively
+## Forum text scraping
 
-The posting information was then queried using a set of regular expressions (terms in `scripts/term_hiearchy.py`, script in scripts/generate_datasets_hierarchy.py`) which was then processed (`term_descriptive_statistics.ipynb`) to remove overlapping hits in accordance with a priority hierarchy of terms and categorised. For example, `Noodle whore` being counted as racist misogyny instead of counting towards a use of `whore`.
+The publicly accessible incels.is forum was scraped on `2021_04_15` using a custom beautifulsoup4 script `scripts/scrape_incels.py` (see [log](2021_04_15_inceldom_discussion_scrape/2021_04_15_inceldom_discussion_scrape.log) and [index](2021_04_15_inceldom_discussion_scrape/complete_submissions_index.txt) for scrape details).
 
-These queries were developed by Mike and Jaymes doing qualitative analysis of forum posts.
+## Quantitative analysis of qualitatively generated glossary
 
-This notebook was then used to generate `table1_usage_counts.tsv`
+Key terms were identified by sociologist colleagues through qualitative grounded reading of a random sample of the scraped threads.
+These were then used to develop a series of regular expressions to capture pluralisation/variation of terms being used.
+The scraped forum text was then queried using these regular expressions (terms in `scripts/term_hiearchy.py`, script in scripts/generate_datasets_hierarchy.py`) which was then processed (`term_descriptive_statistics.ipynb`) to remove overlapping hits in accordance with a priority hierarchy of terms and categorised. For example, `Noodle whore` being counted as racist misogyny instead of counting towards a use of `whore`.  
 
-## Natural Language Processing Analysis of Most-Used Words
+This notebook was then used to generate:
 
-As a sanity/validity check of these results, I also did a purely quantitative analysis of most-used words on the forum by extracting the lemmatized version of all nouns used in any comment/post (`scripts/extract_all_nouns.py`) to generate a frequency list (`noun_counts.tsv`).
+- Table 1 (count data of numer of term use by category): `table1_usage_counts.tsv` 
+- Table 2 (use of terms by number of participants): 
+- Figure 1 (% of participants using misogynistic terms by number of total posts)
+- Figure 3 (% of participants using terms of specific category by number of posts)
+- Appendix B (List of Misogynistic Terms by Category)
+- Appendix C (Top 25 Uses of Misogynistic Terms)
+
+
+## Validity check of glossary 
+
+As a validity check of these results, I also did a purely quantitative analysis of most-used words on the forum by extracting the lemmatized version of all nouns used in any comment/post (`scripts/extract_all_nouns.py`) to generate a frequency list (`noun_counts.tsv`).
+
+## Regression analyses/trend of term use over time.
+
