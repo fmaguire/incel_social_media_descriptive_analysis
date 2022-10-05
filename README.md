@@ -1,5 +1,7 @@
 # Language use and trends on incels.is
 
+[![DOI](https://zenodo.org/badge/406584594.svg)](https://zenodo.org/badge/latestdoi/406584594)
+
 This repository contains the data and analyses performed for our manuscript the `Men who Hate Women: The Misogyny of Involuntarily Celibate Men` (which builds on data and qualitative work from our prior work: [10.1177/1097184X211017954](https://doi.org/10.1177/1097184X211017954)).  
 This paper builds a qualitatively-developed glossary and performs descriptive quantiative analyses of language-use and trends on [https://incels.is/](https://incels.is/) (previously called incels.co among other iterations).
 
