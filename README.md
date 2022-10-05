@@ -27,5 +27,19 @@ This notebook was then used to generate:
 
 As a validity check of these results, I also did a purely quantitative analysis of most-used words on the forum by extracting the lemmatized version of all nouns used in any comment/post (`scripts/extract_all_nouns.py`) to generate a frequency list (`noun_counts.tsv`).
 
+## Incels.is and Incels.wiki URL references
+
+Any specific page referenced in the manuscript was downloaded (e.g., FAQ, internal glossay documents explaining terms etc) were downloaded as PDFs on 2022-10-02 and archived in `archived_website_urls/`
+
+
 ## Regression analyses/trend of term use over time.
+
+All regression analyses (mixed linear models, change linear models, and individual user models) can be found in `notebooks/2.trends_over_time_regression.ipynb`
+This notebook was used to generate:
+
+- Figure 2 (plot and table): `figure_2_relationship_between_time_and_term_use.png` `results/figure_2_relationship_between_time_and_term_use.csv`
+- Appendix D (summary of individual models) `Appedix_D_individual_model_summaries.tsv`
+- Individual model fits `appendix/individual_model_fits.csv`
+- Monthly averages of term usage `appendix/monthly_averages_more_than_3_months.csv`
+- Diagnostic plots looking at overall temporal trends `appendix/overall_trend_in_terms_being_used.png` and early/late users `appendix/comparing_prescrape_and_new_users.png`
 
