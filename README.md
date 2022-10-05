@@ -7,6 +7,9 @@ This paper builds a qualitatively-developed glossary and performs descriptive qu
 
 The publicly accessible incels.is forum was scraped on `2021_04_15` using a custom beautifulsoup4 script `scripts/scrape_incels.py` (see [log](2021_04_15_inceldom_discussion_scrape/2021_04_15_inceldom_discussion_scrape.log) and [index](2021_04_15_inceldom_discussion_scrape/complete_submissions_index.txt) for scrape details).
 
+To repeat any analyses you first need to download processed scrape files from [OSF](https://osf.io/9gy67/) (DOI: 10.17605/OSF.IO/9GY67) and then place them in `2021_04_15_inceldom_discussion_scrape/`.
+This is due to file size limits on github.
+
 ## Quantitative analysis of qualitatively generated glossary
 
 Key terms were identified by sociologist colleagues through qualitative grounded reading of a random sample of the scraped threads.
